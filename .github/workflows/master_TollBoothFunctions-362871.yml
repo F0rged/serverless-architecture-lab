@@ -39,5 +39,5 @@ jobs:
         app-name: 'TollBoothFunctions-362871'
         slot-name: 'production'
         package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_7410e0bbfe75455babdb101c08a643e4 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f6d48719c2864a39a9f7e68c4d2c3ac3 }}
   
