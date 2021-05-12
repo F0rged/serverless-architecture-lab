@@ -27,6 +27,7 @@ namespace TollBooth
                 log.LogInformation($"Retrieved {licensePlates.Count} license plates");
                 var fileMethods = new FileMethods(log);
                 var uploaded = await fileMethods.GenerateAndSaveCsv(licensePlates);
+
                 if (uploaded)
                 {
                     await databaseMethods.MarkLicensePlatesAsExported(licensePlates);
